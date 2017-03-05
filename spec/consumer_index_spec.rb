@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe ConsumerIndex do
+describe ConsumerIndex do
   it "has a version number" do
     expect(ConsumerIndex::VERSION).not_to be nil
   end
