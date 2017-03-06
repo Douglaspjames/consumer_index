@@ -1,8 +1,10 @@
 # ConsumerIndex
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/consumer_index`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem provides scoring advice about consumers based on their income, Zip code, and age.
 
-TODO: Delete this and the text above, and describe your gem
+## Requirements
+
+Ruby 2.3.0
 
 ## Installation
 
@@ -22,7 +24,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This gem allows you to interact with an API that returns scoring advice about consumers.
+
+ScoringAdvice.request( income: "70000", zip_code: "60068", age: "25" )
+
+propensity => 0.26532
+
+ranking => "C"
+
+##Testing
+
+From Gem's directory run 'bundle exec rspec'
 
 ## Development
 
